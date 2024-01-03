@@ -338,12 +338,12 @@
             <div class="footer">
                 <div class="footer-1">
                     <div class="footer-1__links">
-                        <a href="cauchuyen.php" class="links__link">câu chuyện</a>
-                        <a href="shop.php" class="links__link">shop</a>
+                        <a href="cauchuyen.php" class="links__link">Story</a>
+                        <a href="shop.php" class="links__link">Shop</a>
                     </div>
                     <div class="footer-1__links">
                         <a href="noiban.php" class="links__link">Một & nơi bán</a>
-                        <a href="trogiup_mangsizenaovua.php" class="links__link">trợ giúp</a>
+                        <a href="trogiup_mangsizenaovua.php" class="links__link">Trợ giúp</a>
                     </div>
                     <div class="footer-1__icon">
                         <i class="fa-brands fa-instagram icon"></i>
