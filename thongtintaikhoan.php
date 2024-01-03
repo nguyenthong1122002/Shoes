@@ -62,15 +62,15 @@
                 <div class="header__header-1 fixed">
                     <div class="header-1__left-nemu">
                         <ul class="left-menu__menu">
-                            <li class="menu__item"><a href="cauchuyen.php" class="item__text">câu chuyện</a></li>
-                            <li class="menu__item"><a href="shop.php" class="item__text">shop</a></li>
+                            <li class="menu__item"><a href="cauchuyen.php" class="item__text">Story</a></li>
+                            <li class="menu__item"><a href="shop.php" class="item__text">Shop</a></li>
                             <li class="menu__item"><a href="noiban.php" class="item__text">Một & nơi bán</a></li>
                         </ul>
                     </div>
                     <a href="trangchu.php" class="header-1__logo"></a>
                     <div class="header-1__right-menu">
                         <ul class="right-menu__menu">
-                            <li class="menu__item"><a href="trogiup_mangsizenaovua.php" class="item__text">trợ giúp</a></li>
+                            <li class="menu__item"><a href="trogiup_mangsizenaovua.php" class="item__text">Trợ giúp</a></li>
                             <?php
                                 $countProductInCart = 0;
                                 $href = null;
@@ -87,11 +87,11 @@
                                     $href = "dangnhap.php?linkpage=shop";
                                 }
                             ?>
-                            <li class="menu__item"><a href="<?php echo $href; ?>" class="item__text" name="buttonClickCart">giỏ hàng (<?php echo $countProductInCart; ?>)</a></li>
+                            <li class="menu__item"><a href="<?php echo $href; ?>" class="item__text" name="buttonClickCart">Giỏ hàng (<?php echo $countProductInCart; ?>)</a></li>
 
                             <?php
                                 if($_SESSION["login"] == "false") {
-                                    echo '<li class="menu__item" style="display: block;"><span onclick="login(\'trangchu\')" class="item__text">đăng nhập</span></li>';
+                                    echo '<li class="menu__item" style="display: block;"><span onclick="login(\'trangchu\')" class="item__text">Đăng nhập</span></li>';
                                 } else {
                                     $avatar = $_SESSION['avatar'];
                                     
@@ -122,8 +122,8 @@
                                         echo '</div>';
                                         echo '<div class="item__options">';
                                             echo '<ul>';
-                                                echo '<li onclick="nextPage(\'thongtintaikhoan\');">thông tin tài khoản</li>';
-                                                echo '<li onclick="logout(\'trangchu\');">đăng xuất</li>';
+                                                echo '<li onclick="nextPage(\'thongtintaikhoan\');">Thông tin tài khoản</li>';
+                                                echo '<li onclick="logout(\'trangchu\');">Đăng xuất</li>';
                                             echo '</ul>';
                                         echo '</div>';
                                     echo '</li>';
@@ -144,8 +144,8 @@
             <div class="body">
                 <div class="body__narbar">
                     <ul class="narbar__list">
-                        <li onclick="nextPage('thongtintaikhoan');" class="list__item check">thông tin</li>
-                        <li onclick="nextPage('doimatkhau');" class="list__item">đổi mật khẩu</li>
+                        <li onclick="nextPage('thongtintaikhoan');" class="list__item check">Thông tin</li>
+                        <li onclick="nextPage('doimatkhau');" class="list__item">Đổi mật khẩu</li>
                     </ul>
                 </div>
                 <div class="body__container">
