@@ -1,0 +1,264 @@
+.header__box {
+    width: 100%;
+    height: 100px;
+}
+
+.header__header-2 {
+    height: 300px;
+    background-image: url(../images/images_trogiup/MOT_help_01-2000x875.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__header-2 > h1 {
+    font-size: 48px;
+    color: var(--mau-trang);
+    font-weight: 300;
+}
+
+/* ===================================== BODY */
+
+.body {
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+}
+
+.body__options {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.options__list-options {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.list-options__item {
+    font-size: 22px;
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+.list-options__item a {
+    text-decoration: none;
+    color: var(--mau-chu-mo);
+    transition: color 0.2s;
+}
+
+.list-options__item:hover a {
+    color: var(--mau-chu-duoc-chon);
+}
+
+.checked {
+    color: var(--mau-chu-duoc-chon) !important;
+}
+
+.body__contain-option {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contain-option__tabs {
+    width: 100%;
+    height: 110px;
+}
+
+.tabs__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+.list__item {
+    color: var(--mau-chu-mo-2);
+    font-size: 32px;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+.list__item + .list__item {
+    margin-left: 60px;
+}
+
+.list__item:hover {
+    color: var(--mau-chu-duoc-chon);
+    cursor: pointer;
+}
+
+.checked-2 {
+    color: var(--mau-chu-duoc-chon);
+    border-bottom: 2px solid var(--mau-chu-duoc-chon);
+}
+
+.contain-options__tab-content {
+    margin-bottom: 30px;
+}
+
+.tab-content__content-1,
+.tab-content__content-2,
+.tab-content__content-3 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.tab-content__content-3 {
+    padding-left: 120px;
+}
+
+.show {
+    display: block !important;
+    animation: show 0.3s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        margin-top: 10px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.content-1__content-size-new {
+    display: flex;
+}
+
+.content-size-new__title {
+    font-size: 20px;
+    font-weight: 600;
+    min-width: 120px;
+    padding: 50px 40px 0 60px;
+}
+
+.content-size-new__table-size {
+    margin-top: 40px;
+    border: 2px solid var(--mau-den);
+    border-spacing: 0;
+}
+
+.table-size__row {
+    background-color: transparent;
+    transition: background-color 0.2s;
+}
+
+.table-size__row:hover:not(.table-size__row:nth-child(1)) {
+    background-color: var(--mau-hover);
+}
+
+.row__header-table {
+    min-width: 140px;
+    padding: 30px 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.row__row-table {
+    min-width: 120px;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.content-1__content-size-nor {
+    display: flex;
+}
+
+.content-size-nor__title {
+    font-size: 20px;
+    font-weight: 600;
+    min-width: 120px;
+    padding: 50px 40px 0 60px;
+}
+
+.content-size-nor__table-size {
+    margin-top: 40px;
+    border: 2px solid var(--mau-den);
+    border-spacing: 0;
+}
+
+.content-1__content-how-to-measure-feet {
+    width: 100%;
+}
+
+.content-how-to-measure-feet__title {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.content-how-to-measure-feet__steps {
+    display: flex;
+    width: 100%;
+}
+
+.steps__step {
+    width: 215px;
+}
+
+.steps__step + .steps__step {
+    margin-left: 45px;
+}
+
+.step__image {
+    width: 215px;
+    height: 143px;
+}
+
+.step__number {
+    color: var(--mau-chu-to-dam);
+}
+
+.content-1__note {
+    display: flex;
+    flex-direction: column;
+    width: 740px;
+    height: 280px;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    background-color: #f2f4f3;
+}
+
+.note__title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.content-2__content-size-new {
+    display: flex;
+}
+
+.content-2__content-size-nor {
+    display: flex;
+}
+
+.content-2__content-how-to-measure-feet {
+    width: 100%;
+}
+
+.content-2__note {
+    display: flex;
+    flex-direction: column;
+    width: 740px;
+    height: 280px;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    background-color: #f2f4f3;
+}

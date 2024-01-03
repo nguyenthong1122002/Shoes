@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/logo-da-cat-nen-den.png);
+    background-size: 5%;
+    opacity: 0.05;
+    position: absolute;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 99;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px var(--mau-chu-footer);
+}
+
+.form__group {
+    position: relative;
+}
+
+.group__label {
+    position: absolute;
+    background-color: white;
+    padding: 0 3px;
+    top: -5px;
+    left: 30px;
+}
+
+.group__input {
+    width: 500px;
+    height: 45px;
+    padding: 0 15px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid var(--mau-den-tuyen);
+    margin: 10px;
+}
+
+.button_register {
+    width: 150px;
+    font-size: 24px;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid var(--mau-chu-den);
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    color: var(--mau-chu-den);
+}
+.button_register:hover {
+    cursor: pointer;
+    animation: hoverButtonRegister 0.1s forwards;
+}
+@keyframes hoverButtonRegister {
+    from {
+        background-color: white;
+        color: var(--mau-chu-den);
+    }
+    to {
+        background-color: var(--mau-chu-den);
+        color: white;
+    }
+}
+
+.error,
+.success {
+    width: 300px;
+    height: 100px;
+    background-color: #e74c3c;
+    font-size: 20px;
+    color: white;
+    z-index: 99;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px var(--mau-chu-footer);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    overflow: hidden;
+    animation: show 0.3s forwards;
+}
+@keyframes show {
+    from {
+        right: -300px;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.error .icon {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: #0d1119;
+}
+
+.error .icon:hover {
+    cursor: pointer;
+}
+
+.success {
+    height: auto;
+    background-color: #2ecc71;
+}
+
+
+.hide {
+    animation: hide 0.3s forwards;
+}
+@keyframes hide {
+    from {
+        opacity: 1;
+        display: block;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}

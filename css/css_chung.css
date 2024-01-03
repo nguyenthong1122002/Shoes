@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* THANH HEADER TRÊN CÙNG */
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__header-1 {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-1__left-nemu {
+    margin-left: 50px;
+}
+.header-1__right-menu {
+    margin-right: 50px;
+}
+.header-1__logo {
+    width: 120px;
+    height: 80px;
+    background-image: url(../images/logo-da-cat-nen-den.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -60px;
+}
+
+.left-menu__menu, 
+.right-menu__menu {
+    list-style: none;
+    font-weight: 700;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__item {
+    min-width: 120px;
+    height: 60px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+.menu__item:hover {
+    cursor: pointer;
+    border-bottom: 2px solid var(--mau-chu-den);
+}
+.menu__item:hover > .item__options {
+    display: block;
+    animation: hoverAvatar 0.2s forwards;
+}
+@keyframes hoverAvatar {
+    from {
+        opacity: 0;
+        bottom: -78px;
+    }
+    to {
+        opacity: 1;
+        bottom: -84px;
+    }
+}
+.item__text {
+    text-decoration: none;
+    color: var(--mau-chu-den);
+    background-color: white;
+    border: none;
+}
+.item__avatar {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 30px;
+    top: -10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 2px solid black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.item__avatar .icon {
+    font-size: 45px;
+    color: var(--mau-button-selected);
+}
+.avatar__avatar {
+    position: absolute;
+}
+.item__options {
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    bottom: -84px;
+    left: -40px;
+    z-index: 99;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+.item__options ul {
+    list-style: none;
+    padding: 0;
+}
+.item__options ul li {
+    padding: 10px 20px;
+}
+.item__options ul li:hover {
+    cursor: pointer;
+    animation: liHover 0.2s forwards;
+}
+@keyframes liHover {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-button-no-select);
+    }
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+}
+
+.footer-1 {
+    width: 100%;
+    height: 200px;
+    background-color: var(--mau-footer-1);
+    box-sizing: border-box;
+    padding: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-1__links {
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.links__link {
+    text-decoration: none;
+    color: var(--mau-chu-footer);
+    transition: color 0.2s;
+}
+.links__link:hover {
+    color: #D8DCDB;
+}
+
+.footer-1__icon {
+    margin-left: 60px;
+    font-size: 28px;
+}
+
+.icon {
+    color: var(--mau-chu-footer);
+    margin: 0 10px;
+    transition: color 0.2s;
+}
+.icon:hover {
+    color: var(--mau-chu-footer-hover);
+}
+
+.footer-2 {
+    width: 100%;
+    height: 60px;
+    background-color: var(--mau-footer-2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.footer-2__link {
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0 10px;
+    color: var(--mau-chu-footer);
+    transition: color 0.2s;
+}
+.footer-2__link:hover {
+    color: var(--mau-chu-footer-hover);
+    text-decoration: underline;
+}

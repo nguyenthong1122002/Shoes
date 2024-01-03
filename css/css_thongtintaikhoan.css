@@ -1,0 +1,2425 @@
+.header__box {
+    width: 100%;
+    height: 100px;
+}
+
+.header__header-2 {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+/* =============================================== BODY */
+
+.body {
+    width: 100%;
+    height: calc(100vh - 100px - 2px);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.body__narbar {
+    width: 300px;
+    box-sizing: border-box;
+    /* border-right: 2px solid black; */
+}
+
+.narbar__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.list__item {
+    width: 100%;
+    padding: 15px 0 15px 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.list__item:hover {
+    cursor: pointer;
+    animation: itemHover 0.2s forwards;
+}
+@keyframes itemHover {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-xam-sang);
+    }
+}
+
+.check {
+    background-color: var(--mau-xam-sang);
+}
+
+.body__container {
+    width: calc(100vw - 300px);
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.container__notice {
+    width: 500px;
+    padding: 5px 10px 5px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;
+    user-select: none;
+    position: absolute;
+    animation: showNotice 0.3s forwards;
+}
+@keyframes showNotice {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.error {
+    background-color: #e74c3c;
+}
+.success {
+    background-color: #2ecc71;
+}
+
+.container__box {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.box__info {
+    /* height: 100%; */
+    flex: 5;
+    box-sizing: border-box;
+    border-right: 1px solid var(--mau-xam-that-su);
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.box__avatar {
+    /* height: 100%; */
+    flex: 3;
+    box-sizing: border-box;
+    border-left: 1px solid var(--mau-xam-that-su);
+}
+
+.info__group-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+}
+
+.group-info__label {
+    width: 150px;
+    font-size: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+    user-select: none;
+}
+
+.group-info__input {
+    width: 330px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+    pointer-events: none;
+}
+.edit {
+    pointer-events: all;
+    /* border: 2px solid black; */
+    animation: effectEdit 0.3s forwards;
+}
+@keyframes effectEdit {
+    from {
+        border: 0 solid black;
+    }
+    to {
+        border: 2px solid black;
+    }
+}
+
+.group-info__button-edit {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    color: var(--mau-chu-mo);
+}
+.group-info__button-edit:hover {
+    cursor: pointer;
+    animation: hoverButtonEdit 0.2s forwards;
+}
+@keyframes hoverButtonEdit {
+    from {
+        color: var(--mau-chu-mo);
+    }
+    to {
+        color: black;
+    }
+}
+
+.group-info__button-save {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    background-color: white;
+    border: none;
+    font-size: 19px;
+    color: #2ecc71;
+}
+.group-info__button-save:hover {
+    cursor: pointer;
+    animation: hoverButtonSave 0.2s forwards;
+}
+@keyframes hoverButtonSave {
+    from {
+        color: #2ecc71;
+    }
+    to {
+        color: #10a84f;
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+.box__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px 10px;
+}
+
+.avatar__image {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--mau-chu-mo);
+    margin-bottom: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.avatar__image .icon {
+    font-size: 150px;
+    color: var(--mau-chu-mo);
+}
+
+.avatar__buttonChangeImage {
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.avatar__buttonChangeImage:hover {
+    cursor: pointer;
+    animation: hoverButtonChangeImage 0.1s forwards;
+}
+@keyframes hoverButtonChangeImage {
+    from {
+        background-color: white;
+        color: black;
+    }
+    to {
+        background-color: black;
+        color: white;
+    }
+}
+
+.body__background {
+    position: absolute;
+    /* top: -500px; */
+    left: -300px;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(36, 54, 41, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: showBoxChangeAvatar 0.5s forwards;
+}
+@keyframes showBoxChangeAvatar {
+    from {
+        opacity: 0;
+        top: 10px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+.body__background-display-none {
+    display: none;
+}
+
+.background__box {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#box__show-avatar {
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#show-avatar__avatar {
+    position: absolute;
+    display: block;
+}
+
+#box__range {
+    width: 300px;
+    margin-top: 30px;
+    background-color: black;
+}
+
+.box__buttons {
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.buttons__button-cancel,
+.buttons__button-submit {
+    padding: 7px 12px;
+    font-size: 18px;
+    margin: 0 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.buttons__button-cancel {
+    color: black;
+    background-color: white;
+}
+.buttons__button-submit {
+    color: white;
+    background-color: black;
+}
+.buttons__button-cancel:hover,
+.buttons__button-submit:hover {
+    cursor: pointer;
+}
+
+
+.box__form {
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.form__group-password {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.group-password__label {
+    font-size: 20px;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.group-password__input {
+    width: 400px;
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.group-password__buttonChangePassword {
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.group-password__buttonChangePassword:hover {
+    cursor: pointer;
+    animation: hoverButtonChangePassword 0.2s forwards;
+}
+@keyframes hoverButtonChangePassword {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-chu-mo-2);
+    }
+}
+
+.show {
+    display: flex;
+    animation: show 0.5s forwards;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}.header__box {
+    width: 100%;
+    height: 100px;
+}
+
+.header__header-2 {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+/* =============================================== BODY */
+
+.body {
+    width: 100%;
+    height: calc(100vh - 100px - 2px);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.body__narbar {
+    width: 300px;
+    box-sizing: border-box;
+    /* border-right: 2px solid black; */
+}
+
+.narbar__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.list__item {
+    width: 100%;
+    padding: 15px 0 15px 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.list__item:hover {
+    cursor: pointer;
+    animation: itemHover 0.2s forwards;
+}
+@keyframes itemHover {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-xam-sang);
+    }
+}
+
+.check {
+    background-color: var(--mau-xam-sang);
+}
+
+.body__container {
+    width: calc(100vw - 300px);
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.container__notice {
+    width: 500px;
+    padding: 5px 10px 5px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;
+    user-select: none;
+    position: absolute;
+    animation: showNotice 0.3s forwards;
+}
+@keyframes showNotice {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.error {
+    background-color: #e74c3c;
+}
+.success {
+    background-color: #2ecc71;
+}
+
+.container__box {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.box__info {
+    /* height: 100%; */
+    flex: 5;
+    box-sizing: border-box;
+    border-right: 1px solid var(--mau-xam-that-su);
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.box__avatar {
+    /* height: 100%; */
+    flex: 3;
+    box-sizing: border-box;
+    border-left: 1px solid var(--mau-xam-that-su);
+}
+
+.info__group-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+}
+
+.group-info__label {
+    width: 150px;
+    font-size: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+    user-select: none;
+}
+
+.group-info__input {
+    width: 330px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+    pointer-events: none;
+}
+.edit {
+    pointer-events: all;
+    /* border: 2px solid black; */
+    animation: effectEdit 0.3s forwards;
+}
+@keyframes effectEdit {
+    from {
+        border: 0 solid black;
+    }
+    to {
+        border: 2px solid black;
+    }
+}
+
+.group-info__button-edit {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    color: var(--mau-chu-mo);
+}
+.group-info__button-edit:hover {
+    cursor: pointer;
+    animation: hoverButtonEdit 0.2s forwards;
+}
+@keyframes hoverButtonEdit {
+    from {
+        color: var(--mau-chu-mo);
+    }
+    to {
+        color: black;
+    }
+}
+
+.group-info__button-save {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    background-color: white;
+    border: none;
+    font-size: 19px;
+    color: #2ecc71;
+}
+.group-info__button-save:hover {
+    cursor: pointer;
+    animation: hoverButtonSave 0.2s forwards;
+}
+@keyframes hoverButtonSave {
+    from {
+        color: #2ecc71;
+    }
+    to {
+        color: #10a84f;
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+.box__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px 10px;
+}
+
+.avatar__image {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--mau-chu-mo);
+    margin-bottom: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.avatar__image .icon {
+    font-size: 150px;
+    color: var(--mau-chu-mo);
+}
+
+.avatar__buttonChangeImage {
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.avatar__buttonChangeImage:hover {
+    cursor: pointer;
+    animation: hoverButtonChangeImage 0.1s forwards;
+}
+@keyframes hoverButtonChangeImage {
+    from {
+        background-color: white;
+        color: black;
+    }
+    to {
+        background-color: black;
+        color: white;
+    }
+}
+
+.body__background {
+    position: absolute;
+    /* top: -500px; */
+    left: -300px;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(36, 54, 41, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: showBoxChangeAvatar 0.5s forwards;
+}
+@keyframes showBoxChangeAvatar {
+    from {
+        opacity: 0;
+        top: 10px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+.body__background-display-none {
+    display: none;
+}
+
+.background__box {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#box__show-avatar {
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#show-avatar__avatar {
+    position: absolute;
+    display: block;
+}
+
+#box__range {
+    width: 300px;
+    margin-top: 30px;
+    background-color: black;
+}
+
+.box__buttons {
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.buttons__button-cancel,
+.buttons__button-submit {
+    padding: 7px 12px;
+    font-size: 18px;
+    margin: 0 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.buttons__button-cancel {
+    color: black;
+    background-color: white;
+}
+.buttons__button-submit {
+    color: white;
+    background-color: black;
+}
+.buttons__button-cancel:hover,
+.buttons__button-submit:hover {
+    cursor: pointer;
+}
+
+
+.box__form {
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.form__group-password {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.group-password__label {
+    font-size: 20px;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.group-password__input {
+    width: 400px;
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.group-password__buttonChangePassword {
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.group-password__buttonChangePassword:hover {
+    cursor: pointer;
+    animation: hoverButtonChangePassword 0.2s forwards;
+}
+@keyframes hoverButtonChangePassword {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-chu-mo-2);
+    }
+}
+
+.show {
+    display: flex;
+    animation: show 0.5s forwards;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}.header__box {
+    width: 100%;
+    height: 100px;
+}
+
+.header__header-2 {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+/* =============================================== BODY */
+
+.body {
+    width: 100%;
+    height: calc(100vh - 100px - 2px);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.body__narbar {
+    width: 300px;
+    box-sizing: border-box;
+    /* border-right: 2px solid black; */
+}
+
+.narbar__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.list__item {
+    width: 100%;
+    padding: 15px 0 15px 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.list__item:hover {
+    cursor: pointer;
+    animation: itemHover 0.2s forwards;
+}
+@keyframes itemHover {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-xam-sang);
+    }
+}
+
+.check {
+    background-color: var(--mau-xam-sang);
+}
+
+.body__container {
+    width: calc(100vw - 300px);
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.container__notice {
+    width: 500px;
+    padding: 5px 10px 5px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;
+    user-select: none;
+    position: absolute;
+    animation: showNotice 0.3s forwards;
+}
+@keyframes showNotice {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.error {
+    background-color: #e74c3c;
+}
+.success {
+    background-color: #2ecc71;
+}
+
+.container__box {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.box__info {
+    /* height: 100%; */
+    flex: 5;
+    box-sizing: border-box;
+    border-right: 1px solid var(--mau-xam-that-su);
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.box__avatar {
+    /* height: 100%; */
+    flex: 3;
+    box-sizing: border-box;
+    border-left: 1px solid var(--mau-xam-that-su);
+}
+
+.info__group-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+}
+
+.group-info__label {
+    width: 150px;
+    font-size: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+    user-select: none;
+}
+
+.group-info__input {
+    width: 330px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+    pointer-events: none;
+}
+.edit {
+    pointer-events: all;
+    /* border: 2px solid black; */
+    animation: effectEdit 0.3s forwards;
+}
+@keyframes effectEdit {
+    from {
+        border: 0 solid black;
+    }
+    to {
+        border: 2px solid black;
+    }
+}
+
+.group-info__button-edit {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    color: var(--mau-chu-mo);
+}
+.group-info__button-edit:hover {
+    cursor: pointer;
+    animation: hoverButtonEdit 0.2s forwards;
+}
+@keyframes hoverButtonEdit {
+    from {
+        color: var(--mau-chu-mo);
+    }
+    to {
+        color: black;
+    }
+}
+
+.group-info__button-save {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    background-color: white;
+    border: none;
+    font-size: 19px;
+    color: #2ecc71;
+}
+.group-info__button-save:hover {
+    cursor: pointer;
+    animation: hoverButtonSave 0.2s forwards;
+}
+@keyframes hoverButtonSave {
+    from {
+        color: #2ecc71;
+    }
+    to {
+        color: #10a84f;
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+.box__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px 10px;
+}
+
+.avatar__image {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--mau-chu-mo);
+    margin-bottom: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.avatar__image .icon {
+    font-size: 150px;
+    color: var(--mau-chu-mo);
+}
+
+.avatar__buttonChangeImage {
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.avatar__buttonChangeImage:hover {
+    cursor: pointer;
+    animation: hoverButtonChangeImage 0.1s forwards;
+}
+@keyframes hoverButtonChangeImage {
+    from {
+        background-color: white;
+        color: black;
+    }
+    to {
+        background-color: black;
+        color: white;
+    }
+}
+
+.body__background {
+    position: absolute;
+    /* top: -500px; */
+    left: -300px;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(36, 54, 41, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: showBoxChangeAvatar 0.5s forwards;
+}
+@keyframes showBoxChangeAvatar {
+    from {
+        opacity: 0;
+        top: 10px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+.body__background-display-none {
+    display: none;
+}
+
+.background__box {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#box__show-avatar {
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#show-avatar__avatar {
+    position: absolute;
+    display: block;
+}
+
+#box__range {
+    width: 300px;
+    margin-top: 30px;
+    background-color: black;
+}
+
+.box__buttons {
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.buttons__button-cancel,
+.buttons__button-submit {
+    padding: 7px 12px;
+    font-size: 18px;
+    margin: 0 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.buttons__button-cancel {
+    color: black;
+    background-color: white;
+}
+.buttons__button-submit {
+    color: white;
+    background-color: black;
+}
+.buttons__button-cancel:hover,
+.buttons__button-submit:hover {
+    cursor: pointer;
+}
+
+
+.box__form {
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.form__group-password {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.group-password__label {
+    font-size: 20px;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.group-password__input {
+    width: 400px;
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.group-password__buttonChangePassword {
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.group-password__buttonChangePassword:hover {
+    cursor: pointer;
+    animation: hoverButtonChangePassword 0.2s forwards;
+}
+@keyframes hoverButtonChangePassword {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-chu-mo-2);
+    }
+}
+
+.show {
+    display: flex;
+    animation: show 0.5s forwards;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}.header__box {
+    width: 100%;
+    height: 100px;
+}
+
+.header__header-2 {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+/* =============================================== BODY */
+
+.body {
+    width: 100%;
+    height: calc(100vh - 100px - 2px);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.body__narbar {
+    width: 300px;
+    box-sizing: border-box;
+    /* border-right: 2px solid black; */
+}
+
+.narbar__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.list__item {
+    width: 100%;
+    padding: 15px 0 15px 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.list__item:hover {
+    cursor: pointer;
+    animation: itemHover 0.2s forwards;
+}
+@keyframes itemHover {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-xam-sang);
+    }
+}
+
+.check {
+    background-color: var(--mau-xam-sang);
+}
+
+.body__container {
+    width: calc(100vw - 300px);
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.container__notice {
+    width: 500px;
+    padding: 5px 10px 5px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;
+    user-select: none;
+    position: absolute;
+    animation: showNotice 0.3s forwards;
+}
+@keyframes showNotice {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.error {
+    background-color: #e74c3c;
+}
+.success {
+    background-color: #2ecc71;
+}
+
+.container__box {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.box__info {
+    /* height: 100%; */
+    flex: 5;
+    box-sizing: border-box;
+    border-right: 1px solid var(--mau-xam-that-su);
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.box__avatar {
+    /* height: 100%; */
+    flex: 3;
+    box-sizing: border-box;
+    border-left: 1px solid var(--mau-xam-that-su);
+}
+
+.info__group-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+}
+
+.group-info__label {
+    width: 150px;
+    font-size: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+    user-select: none;
+}
+
+.group-info__input {
+    width: 330px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+    pointer-events: none;
+}
+.edit {
+    pointer-events: all;
+    /* border: 2px solid black; */
+    animation: effectEdit 0.3s forwards;
+}
+@keyframes effectEdit {
+    from {
+        border: 0 solid black;
+    }
+    to {
+        border: 2px solid black;
+    }
+}
+
+.group-info__button-edit {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    color: var(--mau-chu-mo);
+}
+.group-info__button-edit:hover {
+    cursor: pointer;
+    animation: hoverButtonEdit 0.2s forwards;
+}
+@keyframes hoverButtonEdit {
+    from {
+        color: var(--mau-chu-mo);
+    }
+    to {
+        color: black;
+    }
+}
+
+.group-info__button-save {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    background-color: white;
+    border: none;
+    font-size: 19px;
+    color: #2ecc71;
+}
+.group-info__button-save:hover {
+    cursor: pointer;
+    animation: hoverButtonSave 0.2s forwards;
+}
+@keyframes hoverButtonSave {
+    from {
+        color: #2ecc71;
+    }
+    to {
+        color: #10a84f;
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+.box__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px 10px;
+}
+
+.avatar__image {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--mau-chu-mo);
+    margin-bottom: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.avatar__image .icon {
+    font-size: 150px;
+    color: var(--mau-chu-mo);
+}
+
+.avatar__buttonChangeImage {
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.avatar__buttonChangeImage:hover {
+    cursor: pointer;
+    animation: hoverButtonChangeImage 0.1s forwards;
+}
+@keyframes hoverButtonChangeImage {
+    from {
+        background-color: white;
+        color: black;
+    }
+    to {
+        background-color: black;
+        color: white;
+    }
+}
+
+.body__background {
+    position: absolute;
+    /* top: -500px; */
+    left: -300px;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(36, 54, 41, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: showBoxChangeAvatar 0.5s forwards;
+}
+@keyframes showBoxChangeAvatar {
+    from {
+        opacity: 0;
+        top: 10px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+.body__background-display-none {
+    display: none;
+}
+
+.background__box {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#box__show-avatar {
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#show-avatar__avatar {
+    position: absolute;
+    display: block;
+}
+
+#box__range {
+    width: 300px;
+    margin-top: 30px;
+    background-color: black;
+}
+
+.box__buttons {
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.buttons__button-cancel,
+.buttons__button-submit {
+    padding: 7px 12px;
+    font-size: 18px;
+    margin: 0 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.buttons__button-cancel {
+    color: black;
+    background-color: white;
+}
+.buttons__button-submit {
+    color: white;
+    background-color: black;
+}
+.buttons__button-cancel:hover,
+.buttons__button-submit:hover {
+    cursor: pointer;
+}
+
+
+.box__form {
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.form__group-password {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.group-password__label {
+    font-size: 20px;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.group-password__input {
+    width: 400px;
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.group-password__buttonChangePassword {
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.group-password__buttonChangePassword:hover {
+    cursor: pointer;
+    animation: hoverButtonChangePassword 0.2s forwards;
+}
+@keyframes hoverButtonChangePassword {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-chu-mo-2);
+    }
+}
+
+.show {
+    display: flex;
+    animation: show 0.5s forwards;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}.header__box {
+    width: 100%;
+    height: 100px;
+}
+
+.header__header-2 {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+/* =============================================== BODY */
+
+.body {
+    width: 100%;
+    height: calc(100vh - 100px - 2px);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.body__narbar {
+    width: 300px;
+    box-sizing: border-box;
+    /* border-right: 2px solid black; */
+}
+
+.narbar__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.list__item {
+    width: 100%;
+    padding: 15px 0 15px 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.list__item:hover {
+    cursor: pointer;
+    animation: itemHover 0.2s forwards;
+}
+@keyframes itemHover {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-xam-sang);
+    }
+}
+
+.check {
+    background-color: var(--mau-xam-sang);
+}
+
+.body__container {
+    width: calc(100vw - 300px);
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.container__notice {
+    width: 500px;
+    padding: 5px 10px 5px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;
+    user-select: none;
+    position: absolute;
+    animation: showNotice 0.3s forwards;
+}
+@keyframes showNotice {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.error {
+    background-color: #e74c3c;
+}
+.success {
+    background-color: #2ecc71;
+}
+
+.container__box {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.box__info {
+    /* height: 100%; */
+    flex: 5;
+    box-sizing: border-box;
+    border-right: 1px solid var(--mau-xam-that-su);
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.box__avatar {
+    /* height: 100%; */
+    flex: 3;
+    box-sizing: border-box;
+    border-left: 1px solid var(--mau-xam-that-su);
+}
+
+.info__group-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+}
+
+.group-info__label {
+    width: 150px;
+    font-size: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+    user-select: none;
+}
+
+.group-info__input {
+    width: 330px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+    pointer-events: none;
+}
+.edit {
+    pointer-events: all;
+    /* border: 2px solid black; */
+    animation: effectEdit 0.3s forwards;
+}
+@keyframes effectEdit {
+    from {
+        border: 0 solid black;
+    }
+    to {
+        border: 2px solid black;
+    }
+}
+
+.group-info__button-edit {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    color: var(--mau-chu-mo);
+}
+.group-info__button-edit:hover {
+    cursor: pointer;
+    animation: hoverButtonEdit 0.2s forwards;
+}
+@keyframes hoverButtonEdit {
+    from {
+        color: var(--mau-chu-mo);
+    }
+    to {
+        color: black;
+    }
+}
+
+.group-info__button-save {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    background-color: white;
+    border: none;
+    font-size: 19px;
+    color: #2ecc71;
+}
+.group-info__button-save:hover {
+    cursor: pointer;
+    animation: hoverButtonSave 0.2s forwards;
+}
+@keyframes hoverButtonSave {
+    from {
+        color: #2ecc71;
+    }
+    to {
+        color: #10a84f;
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+.box__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px 10px;
+}
+
+.avatar__image {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--mau-chu-mo);
+    margin-bottom: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.avatar__image .icon {
+    font-size: 150px;
+    color: var(--mau-chu-mo);
+}
+
+.avatar__buttonChangeImage {
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.avatar__buttonChangeImage:hover {
+    cursor: pointer;
+    animation: hoverButtonChangeImage 0.1s forwards;
+}
+@keyframes hoverButtonChangeImage {
+    from {
+        background-color: white;
+        color: black;
+    }
+    to {
+        background-color: black;
+        color: white;
+    }
+}
+
+.body__background {
+    position: absolute;
+    /* top: -500px; */
+    left: -300px;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(36, 54, 41, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: showBoxChangeAvatar 0.5s forwards;
+}
+@keyframes showBoxChangeAvatar {
+    from {
+        opacity: 0;
+        top: 10px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+.body__background-display-none {
+    display: none;
+}
+
+.background__box {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#box__show-avatar {
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#show-avatar__avatar {
+    position: absolute;
+    display: block;
+}
+
+#box__range {
+    width: 300px;
+    margin-top: 30px;
+    background-color: black;
+}
+
+.box__buttons {
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.buttons__button-cancel,
+.buttons__button-submit {
+    padding: 7px 12px;
+    font-size: 18px;
+    margin: 0 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.buttons__button-cancel {
+    color: black;
+    background-color: white;
+}
+.buttons__button-submit {
+    color: white;
+    background-color: black;
+}
+.buttons__button-cancel:hover,
+.buttons__button-submit:hover {
+    cursor: pointer;
+}
+
+
+.box__form {
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.form__group-password {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.group-password__label {
+    font-size: 20px;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.group-password__input {
+    width: 400px;
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.group-password__buttonChangePassword {
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.group-password__buttonChangePassword:hover {
+    cursor: pointer;
+    animation: hoverButtonChangePassword 0.2s forwards;
+}
+@keyframes hoverButtonChangePassword {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-chu-mo-2);
+    }
+}
+
+.show {
+    display: flex;
+    animation: show 0.5s forwards;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}.header__box {
+    width: 100%;
+    height: 100px;
+}
+
+.header__header-2 {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+/* =============================================== BODY */
+
+.body {
+    width: 100%;
+    height: calc(100vh - 100px - 2px);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.body__narbar {
+    width: 300px;
+    box-sizing: border-box;
+    /* border-right: 2px solid black; */
+}
+
+.narbar__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.list__item {
+    width: 100%;
+    padding: 15px 0 15px 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.list__item:hover {
+    cursor: pointer;
+    animation: itemHover 0.2s forwards;
+}
+@keyframes itemHover {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-xam-sang);
+    }
+}
+
+.check {
+    background-color: var(--mau-xam-sang);
+}
+
+.body__container {
+    width: calc(100vw - 300px);
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.container__notice {
+    width: 500px;
+    padding: 5px 10px 5px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;
+    user-select: none;
+    position: absolute;
+    animation: showNotice 0.3s forwards;
+}
+@keyframes showNotice {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.error {
+    background-color: #e74c3c;
+}
+.success {
+    background-color: #2ecc71;
+}
+
+.container__box {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.box__info {
+    /* height: 100%; */
+    flex: 5;
+    box-sizing: border-box;
+    border-right: 1px solid var(--mau-xam-that-su);
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.box__avatar {
+    /* height: 100%; */
+    flex: 3;
+    box-sizing: border-box;
+    border-left: 1px solid var(--mau-xam-that-su);
+}
+
+.info__group-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+}
+
+.group-info__label {
+    width: 150px;
+    font-size: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+    user-select: none;
+}
+
+.group-info__input {
+    width: 330px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+    pointer-events: none;
+}
+.edit {
+    pointer-events: all;
+    /* border: 2px solid black; */
+    animation: effectEdit 0.3s forwards;
+}
+@keyframes effectEdit {
+    from {
+        border: 0 solid black;
+    }
+    to {
+        border: 2px solid black;
+    }
+}
+
+.group-info__button-edit {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    color: var(--mau-chu-mo);
+}
+.group-info__button-edit:hover {
+    cursor: pointer;
+    animation: hoverButtonEdit 0.2s forwards;
+}
+@keyframes hoverButtonEdit {
+    from {
+        color: var(--mau-chu-mo);
+    }
+    to {
+        color: black;
+    }
+}
+
+.group-info__button-save {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    padding: 12px 0;
+    background-color: white;
+    border: none;
+    font-size: 19px;
+    color: #2ecc71;
+}
+.group-info__button-save:hover {
+    cursor: pointer;
+    animation: hoverButtonSave 0.2s forwards;
+}
+@keyframes hoverButtonSave {
+    from {
+        color: #2ecc71;
+    }
+    to {
+        color: #10a84f;
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+.box__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px 10px;
+}
+
+.avatar__image {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--mau-chu-mo);
+    margin-bottom: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.avatar__image .icon {
+    font-size: 150px;
+    color: var(--mau-chu-mo);
+}
+
+.avatar__buttonChangeImage {
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.avatar__buttonChangeImage:hover {
+    cursor: pointer;
+    animation: hoverButtonChangeImage 0.1s forwards;
+}
+@keyframes hoverButtonChangeImage {
+    from {
+        background-color: white;
+        color: black;
+    }
+    to {
+        background-color: black;
+        color: white;
+    }
+}
+
+.body__background {
+    position: absolute;
+    /* top: -500px; */
+    left: -300px;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(36, 54, 41, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: showBoxChangeAvatar 0.5s forwards;
+}
+@keyframes showBoxChangeAvatar {
+    from {
+        opacity: 0;
+        top: 10px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+.body__background-display-none {
+    display: none;
+}
+
+.background__box {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#box__show-avatar {
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#show-avatar__avatar {
+    position: absolute;
+    display: block;
+}
+
+#box__range {
+    width: 300px;
+    margin-top: 30px;
+    background-color: black;
+}
+
+.box__buttons {
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.buttons__button-cancel,
+.buttons__button-submit {
+    padding: 7px 12px;
+    font-size: 18px;
+    margin: 0 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.buttons__button-cancel {
+    color: black;
+    background-color: white;
+}
+.buttons__button-submit {
+    color: white;
+    background-color: black;
+}
+.buttons__button-cancel:hover,
+.buttons__button-submit:hover {
+    cursor: pointer;
+}
+
+
+.box__form {
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.form__group-password {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.group-password__label {
+    font-size: 20px;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.group-password__input {
+    width: 400px;
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.group-password__buttonChangePassword {
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.group-password__buttonChangePassword:hover {
+    cursor: pointer;
+    animation: hoverButtonChangePassword 0.2s forwards;
+}
+@keyframes hoverButtonChangePassword {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--mau-chu-mo-2);
+    }
+}
+
+.show {
+    display: flex;
+    animation: show 0.5s forwards;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

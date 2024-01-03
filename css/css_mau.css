@@ -1,0 +1,54 @@
+:root {
+    --mau-chu-den: #2c3e50;
+    --mau-nen-content-1: #e5eef3;
+    --mau-trang: white;
+    --mau-button-no-select: #cccccc;
+    --mau-button-selected: #7b858c;
+    --mau-button-shop-content-3: #b83d26;
+    --mau-chu-content-4: #7b868c;
+    --mau-footer-1: #121720;
+    --mau-footer-2: #0D1119;
+    --mau-chu-footer: #97a6af;
+    --mau-chu-footer-hover: #D8DCDB;
+
+    --mau-den: black;
+
+    --mau-den-tuyen: #111820;
+    --mau-xam-nhe: #ebeded;
+
+    --mau-nuoc-ngot: #d0c7aa;
+    --mau-qua-do: #b83d24;
+    --mau-tim-than: #6d5093;
+    --mau-tung-1: #12312B;
+    --mau-tung-2: #E9DED4;
+    --mau-vang-nghe: #ffc700;
+    --mau-xam-that-su: #b4b9bd;
+    --mau-xanh-la-cay: #125044;
+    --mau-xanh-nuoc-bien: #005a93;
+
+    --mau-nen-title: #353c4e;
+
+    --mau-da: #37363b;
+
+    --mau-hong-tham: #e40972;
+    --mau-xanh-tuoi: #0030d9;
+
+    --mau-button-left-right: #dbdbdc;
+    --mau-footer: #121720;
+
+    --mau-chu-den-2: black;
+
+    --mau-xam-sang: #ecf0f1;
+
+    --mau-nen-slide-chi-tiet-san-pham: #f2f2f2;
+
+    --mau-chu-mo: #91868c;
+    --mau-chu-duoc-chon: #000000;
+    --mau-chu-mo-2: #dcdfe1;
+    --mau-hover: #e6dedeaf;
+    --mau-chu-to-dam: #232731;
+
+    --mau-notice-empty: #F7F8F8;
+    --mau-notice-empty-border-top: #0C416A;
+    --mau-button-return-shop: #AF3A24;
+}

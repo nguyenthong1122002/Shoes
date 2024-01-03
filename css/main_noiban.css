@@ -1,0 +1,146 @@
+.header__box {
+    width: 100%;
+    height: 100px;
+}
+
+.header__header-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header-2__title {
+    margin: 60px 0 90px;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.header-2__slides {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides__image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+}
+
+.slides__image:nth-child(1) {
+    background-image: url(../images/images_noiban/MOT_store_01.webp);
+}
+
+.slides__image:nth-child(2) {
+    background-image: url(../images/images_noiban/MOT_store_02.webp);
+}
+
+.slides__image:nth-child(3) {
+    background-image: url(../images/images_noiban/MOT_store_03.webp);
+}
+
+.slides__image:nth-child(4) {
+    background-image: url(../images/images_noiban/MOT_store_04.webp);
+}
+
+.slides__button {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    bottom: 400px;    
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button__button-left {
+    margin-left: 20px;
+    font-size: 50px;
+    color: var(--mau-button-left-right);
+}
+
+.button__button-left:hover {
+    cursor: pointer;
+}
+
+.button__button-right {
+    margin-right: 20px;
+    font-size: 50px;
+    color: var(--mau-button-left-right);
+}
+
+.button__button-right:hover {
+    cursor: pointer;
+}
+
+.appear-right-to-left {
+    animation: appear-right-to-left 0.3s forwards;
+}
+
+@keyframes appear-right-to-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.disappear-right-to-left {
+    animation: disappear-right-to-left 0.3s forwards;
+}
+
+@keyframes disappear-right-to-left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.disappear-left-to-right {
+    animation: disappear-left-to-right 0.3s forwards;
+}
+
+@keyframes disappear-left-to-right {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.appear-left-to-right {
+    animation: appear-left-to-right 0.3s forwards;
+}
+
+@keyframes appear-left-to-right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+/* ================================================ BODY */
+.body {
+    padding: 140px 270px;
+}
+
+.body p {
+    font-size: 24px;
+    font-weight: 300;
+}

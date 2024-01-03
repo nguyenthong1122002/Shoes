@@ -1,0 +1,215 @@
+.header__box {
+    width: 100%;
+    height: 100px;
+}
+
+.header__header-2 {
+    width: 100%;
+    height: 750px;
+    background-image: url(../images/images_shop/webbanner-nuocngot-new.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* =========================== BODY ==================================================== */
+
+.body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.body__menu {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    border-top: 1px solid var(--mau-xam-sang);
+    border-bottom: 1px solid var(--mau-xam-sang);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.menu__options {
+    min-width: 200px;
+    font-size: 20px;
+    color: var(--mau-chu-den);
+    padding: 10px 20px;
+    border: 2px solid var(--mau-button-selected);
+    border-radius: 10px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+
+    user-select: none;
+
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.menu__options:hover {
+    cursor: pointer;
+    border-color: var(--mau-den);
+    color: var(--mau-den);
+}
+
+.menu__options:hover > .options__box-option{
+    display: block;
+    animation: showOption 0.5s forwards;
+}
+
+@keyframes showOption {
+    from {
+        top: 40px;
+        opacity: 0;
+    }
+    to {
+        top: 47px;
+        opacity: 1;
+    }
+}
+
+.options__box-option {
+    display: none;
+
+    background-color: white;
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid var(--mau-den);
+    border-bottom-left-radius: 10px;
+
+    z-index: 10;
+
+    overflow: hidden;
+}
+
+.options__box-option > .box-option__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.box-option__list .list__item {
+    min-width: 180px;
+    padding: 5px 0;
+}
+
+.box-option__list .list__item:nth-child(1) {
+    border-bottom: 1px solid var(--mau-den);
+}
+
+.box-option__list .list__item:hover {
+    cursor: pointer;
+    animation: hoverItem 0.2s forwards;
+}
+
+@keyframes hoverItem {
+    from {
+        background-color: white;
+    }   
+    to {
+        background-color: var(--mau-xam-sang);
+    }
+}
+
+.body__contain {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.contain__box {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+.show {
+    display: flex !important;
+    animation: show 0.3s forwards;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.box__image-product {
+    width: 524px;
+    height: 350px;
+    position: relative;
+}
+
+.contain__box:nth-child(1) .box__image-product:nth-child(1) {
+    background-image: url(../images/images_san-pham/giay_da_co_day/mau_den_tuyen/1500x1000_DM_da-den_profile.webp);
+    background-size: cover;
+}
+.contain__box:nth-child(1) .box__image-product:nth-child(2) {
+    background-image: url(../images/images_san-pham/giay_da_co_day/mau_xam_nhe/1500x1000_DM_da-xam-nhat_profile.webp);
+    background-size: cover;
+}
+.contain__box:nth-child(2) .box__image-product {
+    background-image: url(../images/images_san-pham/giay_vai_co_day/mau_nuoc_ngot/1500x1000_dm_nuoc-ngot_profile.webp);
+    background-size: cover;
+    transition: background-image 0.2s;
+    margin: 0 60px;
+}
+.contain__box:nth-child(3) .box__image-product:nth-child(1) {
+    background-image: url(../images/images_san-pham/giay_da_khong_day/mau_da/DT_gem_profile.webp);
+    background-size: cover;
+}
+.contain__box:nth-child(3) .box__image-product:nth-child(2) {
+    background-image: url(../images/images_san-pham/giay_da_khong_day/mau_xam_nhe/1500x1000_DT_da-xam-nhat_profile.webp);
+    background-size: cover;
+}
+.contain__box:nth-child(4) .box__image-product {
+    background-image: url(../images/images_san-pham/giay_vai_khong_day/mau_nuoc_ngot/1500x1000_dt_nuoc-ngot_profile.webp);
+    background-size: cover;
+    transition: background-image 0.2s;
+    margin: 0 60px;
+}
+.box__image-product span {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-size: 26px;
+    font-weight: 700;
+}
+.box__image-product a {
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    color: black;
+}
+
+.box__colors {
+    width: 50px;
+    height: 350px;
+}
+.colors__color {
+    width: 100%;
+    height: calc(100% / 3 - 12px);
+    border-radius: 20px;
+    margin: 2px 0;
+    box-sizing: border-box;
+}
+.check {
+    border: 3px solid var(--mau-chu-den);
+}
+.colors__color:hover {
+    border: 3px solid var(--mau-chu-den);
+    cursor: pointer;
+}
+
+.sand {
+    background-image: url(../images/images_san-pham/giay_vai_khong_day/mau_xanh_la_cay/1500x1000_xanh-la-cay_doi-thuong_profile.webp);
+
+}

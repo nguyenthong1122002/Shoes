@@ -1,0 +1,464 @@
+.fixed {
+    top: -100px;
+    transition: top 0.5s;
+}
+
+.header__header-2 {
+    width: 100%;
+    height: 627px;
+    background-color: yellow;
+    display: flex;
+    position: relative;
+}
+
+.header-2__image-cauchuyen {
+    flex: 1;
+    background-image: url(../images/images_trangchu/Thong-dong-dat-cho-di-dao.webp);
+    background-size: cover;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-2__image-cauchuyen::before {
+    content: "CÂU CHUYỆN";
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.header-2__image-shop {
+    flex: 1;
+    background-image: url(../images/images_trangchu/dclassic-2022-08-08-105201.867.webp);
+    background-size: cover;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-2__image-shop::before {
+    content: "SHOP";
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.header-2__logo {
+    width: 240px;
+    height: 178px;
+    background-image: url(../images/images_trangchu/mot-logo-white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -139px 0 0 -120px;
+}
+
+/* ========================================= BODY */
+
+.body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body__content-1 {
+    width: 100%;
+    height: 532px;
+    background-color: #FFFACD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-1__icon {
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/images_trangchu/icon-content-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.content-1__text {
+    font-size: 34px;
+    font-weight: 700;
+    user-select: none;
+}
+
+.content-1__text + .content-1__text {
+    margin-bottom: 60px;
+}
+
+.body__content-2 {
+    width: 100%;
+    height: 200px;
+    background-color:	#F0F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    font-weight: 750;
+    user-select: none;
+}
+
+.body__content-3 {
+    width: 100%;
+    height: 536px;
+    display: flex;
+}
+
+.content-3__slides-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides-image__header {
+    font-size: 36px;
+    user-select: none;
+}
+
+.slides-image__slides-contain {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.slides-contain__slides {
+    width: 800%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: left 0.4s;
+}
+
+.slides__image {
+    width: calc(100% / 8);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+}
+
+.slides__image:nth-child(1) {
+    background-image: url(../images/images_trangchu/dm_timthan-carousel.webp);
+}
+.slides__image:nth-child(2) {
+    background-image: url(../images/images_trangchu/dm_vangnghe-carousel.webp);
+}
+.slides__image:nth-child(3) {
+    background-image: url(../images/images_trangchu/dm_xamnha-1-carousel.webp);
+}
+.slides__image:nth-child(4) {
+    background-image: url(../images/images_trangchu/frontpage-1-carousel.webp);
+}
+.slides__image:nth-child(5) {
+    background-image: url(../images/images_trangchu/frontpage-4-1200x600-1.webp);
+}
+.slides__image:nth-child(6) {
+    background-image: url(../images/images_trangchu/frontpage-5-carousel.webp);
+}
+.slides__image:nth-child(7) {
+    background-image: url(../images/images_trangchu/frontpage-6-carousel.webp);
+}
+.slides__image:nth-child(8) {
+    background-image: url(../images/images_trangchu/frontpage-carousel.webp);
+}
+
+.slides-image__button-slides {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.button-slides__button {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+
+.button-slides__button:hover {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: var(--mau-button-selected);
+}
+
+.no-select {
+    background-color: var(--mau-button-no-select);
+}
+
+.slides-image__button {
+    width: 150px;
+    height: 60px;
+    box-sizing: border-box;
+    background-color: var(--mau-button-shop-content-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--mau-trang);
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.2s, background-color 0.2s;
+    border: 3px solid var(--mau-button-shop-content-3);
+    letter-spacing: 2px;
+}
+
+.slides-image__button:hover {
+    color: var(--mau-button-shop-content-3);
+    background-color: var(--mau-trang);
+}
+
+.content-3__image {
+    flex: 1;
+    background-image: url(../images/images_trangchu/image-right-content-3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body__content-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.content-4__header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header__line {
+    flex: 1;
+    height: 0;
+    border: 1px solid var(--mau-chu-content-4);
+    margin: 0 20px;
+}
+
+.header__text {
+    font-size: 40px;
+    color: var(--mau-chu-content-4);
+    user-select: none;
+}
+
+.content-4__images {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.body__content-5 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.content-5__header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.content-5__images {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.images__dong-giay {
+    width: 400px;
+    height: 280px;
+    background-image: url(../images/images_trangchu/all_colors_3x2_54c79f6755b84eab9e59e4b09cbad4e2_grande.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    text-decoration: none;
+}
+.dong-giay__text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--mau-trang);
+    margin-bottom: 40px;
+    transition: margin-bottom 0.4s, font-size 0.4s;
+}
+
+.images__dong-giay:hover > .dong-giay__text {
+    margin-bottom: 100px;
+    font-size: 25px;
+}
+
+.images__dong-giay:hover {
+    cursor: pointer;
+}
+.images__mau-giay {
+    width: 400px;
+    height: 280px;
+    background-image: url(../images/images_trangchu/dclassic-2022-08-03-085452.310-1536x2048_dcba8a5a3b92497f80498c8f79e9890e_grande.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    text-decoration: none;
+}
+.mau-giay__text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--mau-trang);
+    margin-bottom: 40px;
+    transition: margin-bottom 0.4s, font-size 0.4s;
+}
+
+.images__mau-giay:hover > .mau-giay__text {
+    margin-bottom: 100px;
+    font-size: 25px;
+}
+
+.images__mau-giay:hover {
+    cursor: pointer;
+}
+.images__thiet-ke {
+    width: 400px;
+    height: 280px;
+    background-image: url(../images/images_trangchu/02a36fb43ad345ed9aadf9c937239920_grande.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    text-decoration: none;
+}
+.thiet-ke__text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--mau-trang);
+    margin-bottom: 40px;
+    transition: margin-bottom 0.4s, font-size 0.4s;
+}
+
+.images__thiet-ke:hover > .thiet-ke__text {
+    margin-bottom: 100px;
+    font-size: 25px;
+}
+
+.images__thiet-ke:hover {
+    cursor: pointer;
+}
+.images__cau-chuyen {
+    width: 400px;
+    height: 280px;
+    background-image: url(../images/images_trangchu/MOT_thumbnail_01.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.cau-chuyen__text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--mau-trang);
+    margin-bottom: 40px;
+    transition: margin-bottom 0.4s, font-size 0.4s;
+}
+
+.images__cau-chuyen:hover > .cau-chuyen__text {
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+.images__cau-chuyen:hover {
+    cursor: pointer;
+}
+
+.images__shop {
+    width: 400px;
+    height: 280px;
+    background-image: url(../images/images_trangchu/MOT_thumbnail_02.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.shop__text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--mau-trang);
+    margin-bottom: 40px;
+    transition: margin-bottom 0.4s, font-size 0.4s;
+}
+
+.images__shop:hover > .shop__text {
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+.images__shop:hover {
+    cursor: pointer;
+}
+
+.images__tro-giup {
+    width: 400px;
+    height: 280px;
+    background-image: url(../images/images_trangchu/MOT_thumbnail_03.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.tro-giup__text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--mau-trang);
+    margin-bottom: 40px;
+    transition: margin-bottom 0.4s, font-size 0.4s;
+}
+
+.images__tro-giup:hover > .tro-giup__text {
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+.images__tro-giup:hover {
+    cursor: pointer;
+}
